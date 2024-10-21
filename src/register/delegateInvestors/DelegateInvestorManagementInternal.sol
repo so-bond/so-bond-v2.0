@@ -8,7 +8,7 @@ import {InvestorManagementInternal} from "../investors/InvestorManagementInterna
 import {DelegateInvestorManagementStorage} from "./DelegateInvestorManagementStorage.sol";
 import {IDelegateInvestorManagementInternal} from "./IDelegateInvestorManagementInternal.sol";
 
-contract DelegateInvestorManagementInternal is
+abstract contract DelegateInvestorManagementInternal is
     IDelegateInvestorManagementInternal,
     InvestorManagementInternal
 {

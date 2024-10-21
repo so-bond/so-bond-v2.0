@@ -12,7 +12,7 @@ interface IKeyringAdapter {
     function checkCredential(uint256 policyId, address account) external view returns (bool);
 }
 
-contract KeyringInvestorManagementInternal is
+abstract contract KeyringInvestorManagementInternal is
     IKeyringInvestorManagementInternal,
     RegisterRoleManagementInternal
 {
