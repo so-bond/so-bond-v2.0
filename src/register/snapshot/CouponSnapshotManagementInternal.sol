@@ -61,7 +61,7 @@ abstract contract CouponSnapshotManagementInternal is
      */
     function _totalSupplyAtCoupon(
         uint256 _couponDate
-    ) public view virtual returns (uint256) {
+    ) internal view virtual returns (uint256) {
         CouponSnapshotManagementStorage.Layout
             storage l = CouponSnapshotManagementStorage.layout();
         uint256 snapshotId = l.couponDateSnapshotId[_couponDate];
